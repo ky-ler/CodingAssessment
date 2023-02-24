@@ -33,7 +33,7 @@ namespace CodingAssessment
             // Output every other customer
             foreach (var customer in orderedCustomers.Where((x, i) => i % 2 == 0))
             {
-                Console.WriteLine($", {customer.CustomerID}, {customer.LastName}, {customer.FirstName}");
+                Console.WriteLine($"{customer.LastName}, {customer.FirstName}");
             }
 
             Console.WriteLine("Enter a name below to filter by name (last or first)");
