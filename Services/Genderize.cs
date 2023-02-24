@@ -16,9 +16,9 @@ namespace CodingAssessment.Services
         // Originally, I had it setup so it would return gender as Task<string>, and do the Console.WriteLine in Program.cs
         // But I ran into a hiccup where the variable's value was "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1..."
         // So I just moved everything into here
-        public async void GetGender(Model.Customer customer)
+        public async Task<string> GetGender(string firstName)
         {
-            string baseUrl = $"https://api.genderize.io/?name={customer.FirstName}";
+            string baseUrl = $"https://api.genderize.io/?name={firstName}";
 
             try
             {
@@ -32,7 +32,7 @@ namespace CodingAssessment.Services
                             if (data != null)
                             {
                                 var dataObj = JObject.Parse(data);
-                                Console.WriteLine($"{customer.LastName}, {customer.FirstName}, {DateTime.Now.Year - customer.BirthDate?.Year}, {dataObj["gender"]}");
+                                return (string)dataObj["gender"];
                             }
                             else
                             {
@@ -47,6 +47,8 @@ namespace CodingAssessment.Services
                 Console.WriteLine($"Error occurred: {exception}");
                 throw;
             }
+
+            return "Gender Unknown";
         }
     }
 }

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CodingAssessment
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             /************************************************************************************************
              Step 1 : Fix all build errors in the project
@@ -76,7 +77,8 @@ namespace CodingAssessment
             Services.Genderize genderize = new Services.Genderize();
             foreach (var customer in customerService.GetActiveCustomers())
             {
-                genderize.GetGender(customer);
+                var gender = await genderize.GetGender(customer.FirstName);
+                Console.WriteLine($"{customer.LastName}, {customer.FirstName}, {DateTime.Now.Year - customer.BirthDate?.Year}, {gender}");
             }
 
             Console.WriteLine("Press any key to end");
