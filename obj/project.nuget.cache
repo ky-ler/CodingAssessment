@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+htaLK639Hd+IksRylRnQxx7m1NnfJ9rfub7OsTQaKOvkhK7YnXJJIu2Evaz1Bz6GEolIRKlqwciDKh+ez7mUg==",
+  "dgSpecHash": "F4s6sueJllNIn5ZGC2YgttKlXF44POmWZSsxwbHrL8ZP6Dj1qF4PQNXweXQ6if1NhWyZg0S53mKFjUcXhPx64w==",
   "success": true,
-  "projectFilePath": "C:\\Temp\\CodingAssessment\\CodingAssessment\\CodingAssessment.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\k\\Desktop\\CodingAssessment\\CodingAssessment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\k\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -29,9 +29,11 @@ namespace CodingAssessment.DataAccess
                 new Model.Customer(){ CustomerID = 1, LastName = "Anderson", MiddleName = "D.", FirstName="Juan", BillingID="44456",
                     BirthDate = Convert.ToDateTime("02/24/1982"), CommunityID=505, ModifyBy=modifiedByUser, ModifyDT = modifiedDate},
                 new Model.Customer(){ CustomerID = 1, LastName = "Mulder", MiddleName = "E.", FirstName="Fox", BillingID="2223",
-                    BirthDate = Convert.ToDateTime("02/24/1982"), CommunityID=505, ModifyBy=modifiedByUser, ModifyDT = modifiedDate},
+                    BirthDate = Convert.ToDateTime("02/24/1982"), CommunityID=505, ModifyBy=modifiedByUser, ModifyDT = modifiedDate,
+                    Disabled=true},
                 new Model.Customer(){ CustomerID = 1, LastName = "Skywalker", MiddleName = "F.", FirstName="Luke", BillingID="6565",
-                    BirthDate = Convert.ToDateTime("02/24/1982"), CommunityID=505, ModifyBy=modifiedByUser, ModifyDT = modifiedDate}
+                    BirthDate = Convert.ToDateTime("02/24/1982"), CommunityID=505, ModifyBy=modifiedByUser, ModifyDT = modifiedDate,
+                    Disabled=true}
             };
         }
     }

@@ -1,5 +1,7 @@
 using CodingAssessment.Intefaces;
 using System;
+using System.Collections.Generic;
+
 namespace CodingAssessment.Model
 {
 
@@ -14,5 +16,6 @@ namespace CodingAssessment.Model
         public string ModifyBy { get; set; }
         public DateTime ModifyDT { get; set; }
 
+        public bool Disabled { get; set; }
     }
 }

@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Temp\\CodingAssessment\\CodingAssessment\\CodingAssessment.csproj": {}
+    "C:\\Users\\k\\Desktop\\CodingAssessment\\CodingAssessment.csproj": {}
   },
   "projects": {
-    "C:\\Temp\\CodingAssessment\\CodingAssessment\\CodingAssessment.csproj": {
+    "C:\\Users\\k\\Desktop\\CodingAssessment\\CodingAssessment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Temp\\CodingAssessment\\CodingAssessment\\CodingAssessment.csproj",
+        "projectUniqueName": "C:\\Users\\k\\Desktop\\CodingAssessment\\CodingAssessment.csproj",
         "projectName": "CodingAssessment",
-        "projectPath": "C:\\Temp\\CodingAssessment\\CodingAssessment\\CodingAssessment.csproj",
-        "packagesPath": "C:\\Users\\brian.gerdon\\.nuget\\packages\\",
-        "outputPath": "C:\\Temp\\CodingAssessment\\CodingAssessment\\obj\\",
+        "projectPath": "C:\\Users\\k\\Desktop\\CodingAssessment\\CodingAssessment.csproj",
+        "packagesPath": "C:\\Users\\k\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\k\\Desktop\\CodingAssessment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\brian.gerdon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,9 +27,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://github.atriacom.com/_registry/nuget/SoftwareEngineering/index.json": {},
-          "https://nuget.pkg.github.com/Glennis-Solutions/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -44,6 +45,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     }
