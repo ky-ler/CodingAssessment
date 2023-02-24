@@ -20,7 +20,7 @@ namespace CodingAssessment
 
             //// get all customer names 
             foreach (var item in customerService.GetAllCustomers())
-                Console.WriteLine($", {item.CustomerID}, {item.LastName}, {item.FirstName}, {item.Disabled}");
+                Console.WriteLine($"{item.LastName}, {item.FirstName}");
 
             Console.WriteLine("Press any key to list every other customer in the list");
             Console.ReadKey();
